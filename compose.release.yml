@@ -1,0 +1,10 @@
+services:
+  api-server:
+    hostname: api-server
+    build:
+      context: apiserver
+      dockerfile: ./Dockerfile
+    ports:
+      - "9080:9080"
+    networks:
+      - private_net

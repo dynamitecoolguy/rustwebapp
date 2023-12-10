@@ -1,0 +1,14 @@
+services:
+  web-server:
+    hostname: web-server
+    build:
+      context: webserver
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - private_net
+
+networks:
+  private_net:
+  
