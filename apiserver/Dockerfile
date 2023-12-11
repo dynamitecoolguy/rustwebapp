@@ -15,6 +15,6 @@ RUN cp /build/target/x86_64-unknown-linux-musl/release/$APPNAME /build/target/my
 FROM alpine:3.18
 WORKDIR /app
 COPY --from=builder /build/target/myapp /app/myapp
-EXPOSE 8080
+EXPOSE 9080
 CMD ["/app/myapp"]
 
